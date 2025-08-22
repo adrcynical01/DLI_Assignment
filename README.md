@@ -28,3 +28,26 @@ The following plots illustrate the performance of the NN model:
   <img src="figures/pr_curve.png" width="400"/>  
   <img src="figures/accuracy_loss.png" width="400"/>  
 </p>
+
+## 8. Making Predictions (Interactive CLI)
+
+The model can be tested interactively by entering feature values via the CLI.
+
+- Each of the **30 input features** must be entered as `-1`, `0`, or `1`.  
+  (e.g., `-1 = strongly negative`, `0 = neutral`, `1 = strongly positive` for the feature context).
+
+- After input, the model outputs a **prediction**:
+  - `1` → Website classified as *Phishing*  
+  - `0` → Website classified as *Legitimate*
+
+### Example Run
+```bash
+$ python predict_cli.py
+
+Enter feature 1 (-1/0/1): 1
+Enter feature 2 (-1/0/1): 0
+...
+Enter feature 30 (-1/0/1): -1
+
+[INFO] Model prediction: PHISHING SITE (1)
+
