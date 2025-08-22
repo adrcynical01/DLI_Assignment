@@ -51,3 +51,52 @@ Enter feature 30 (-1/0/1): -1
 
 [INFO] Model prediction: PHISHING SITE (1)
 
+
+
+---
+
+### **Commit 3: Add Usage Instructions for Saved Model + Streamlit App**
+
+```markdown
+## 9. Deployment & Usage
+
+### 9.1 Loading the Saved Model
+The trained model is saved as `phishing_model.keras`.  
+You can reload it in Python using TensorFlow:
+
+```python
+from tensorflow.keras.models import load_model
+
+# Load saved model
+model = load_model("phishing_model.keras")
+
+# Make predictions
+pred = model.predict(X_test)
+
+9.2 Streamlit Web App
+
+We provide a lightweight Streamlit application for user interaction.
+
+Running the App
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+
+(Make sure streamlit, tensorflow, numpy, and scikit-learn are installed.)
+
+Run the app:
+
+streamlit run app.py
+
+
+Open the local URL provided by Streamlit (default: http://localhost:8501).
+
+9.3 Example App Features
+
+Upload CSV with website features → get phishing/legit prediction.
+
+Manual entry of 30 features via sliders.
+
+Displays evaluation figures (CM, ROC, PR) for transparency.
