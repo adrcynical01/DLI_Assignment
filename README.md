@@ -26,7 +26,8 @@ The following plots illustrate the performance of the NN model:
   <img src="figures/confusion_matrix.jpg" width="400"/>  
   <img src="figures/roc_curve.jpg" width="400"/>  
   <img src="figures/pr_curve.jpg" width="400"/>  
-  <img src="figures/accuracy_loss.jpg" width="400"/>  
+  <img src="figures/accuracy_curve.jpg" width="400"/>  
+  <img src="figures/loss_curve.jpg" width="400"/>  
 </p>
 
 ## 8. Making Predictions (Interactive CLI)
