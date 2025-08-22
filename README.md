@@ -23,10 +23,10 @@ The following plots illustrate the performance of the NN model:
 - **Training Accuracy/Loss Curves:** Show convergence of the model across epochs.
 
 <p align="center">
-  <img src="figures/confusion_matrix.png" width="400"/>  
-  <img src="figures/roc_curve.png" width="400"/>  
-  <img src="figures/pr_curve.png" width="400"/>  
-  <img src="figures/accuracy_loss.png" width="400"/>  
+  <img src="figures/confusion_matrix.jpg" width="400"/>  
+  <img src="figures/roc_curve.jpg" width="400"/>  
+  <img src="figures/pr_curve.jpg" width="400"/>  
+  <img src="figures/accuracy_loss.jpg" width="400"/>  
 </p>
 
 ## 8. Making Predictions (Interactive CLI)
