@@ -51,13 +51,10 @@ Enter feature 30 (-1/0/1): -1
 
 [INFO] Model prediction: PHISHING SITE (1)
 
-
-
----
+```
 
 ### **Commit 3: Add Usage Instructions for Saved Model + Streamlit App**
 
-```markdown
 ## 9. Deployment & Usage
 
 ### 9.1 Loading the Saved Model
@@ -72,6 +69,8 @@ model = load_model("phishing_model.keras")
 
 # Make predictions
 pred = model.predict(X_test)
+
+```
 
 9.2 Streamlit Web App
 
